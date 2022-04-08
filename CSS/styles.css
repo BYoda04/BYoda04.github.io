@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
     margin: 0;
@@ -7,4 +7,103 @@
     box-sizing: border-box;
     font-family: 'Permanent Marker', cursive;
     scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.menu{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    transition: left 1.5s;
+    transition-delay: 0.5s;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.icons li{
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    color: #111;
+}
+
+.icons li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    margin-top: 10px;
+}
+
+.icons li p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;   
+}
+
+.menu li{
+    position: absolute;
+    list-style: none;
+    font-size: 1.5em;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.menu.active li{
+    transform: translateY(calc(-80px * var(--i)));
+}
+
+.toggle{  
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+}
+
+@media (min-width: 767px){
+    
+    .menu{
+        position: fixed;
+        top: 0;
+        right: 0;    
+        width: 125px;
+        height: 100px;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        /* background: #fff; */
+    }
+
+    .menu.active li{
+        transform: translateY(calc(80px * var(--i)));
+    }
+    
 }
