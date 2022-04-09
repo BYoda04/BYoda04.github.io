@@ -107,7 +107,7 @@ body{
 
 .home-section-h{
     text-align: center;
-    font-size: 23px;
+    font-size: 1.5em;
     line-height: 60px;
     color: #fff;
 }
@@ -134,6 +134,7 @@ body{
     max-width: 100%;
     border-radius: 25%;
     padding: 20px 25px 0 25px;
+    flex-basis: 50%;
 }
 
 
@@ -155,5 +156,21 @@ body{
     .menu.active li{
         transform: translateY(calc(80px * var(--i)));
     }
+
+    .home{
+        width: 100vw;
+        margin-top: 35px;
+        padding: 35px 25px 35px 25px;
+    }
     
+    .home-section-h{
+        order: 2;
+        font-size: 4em;
+        flex-basis: 50%;
+    }
+
+    .home-section{
+        flex-basis: 50%;
+    }
+
 }
