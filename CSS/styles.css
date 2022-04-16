@@ -153,8 +153,7 @@ body{
 .home-section img{
     max-width: 100%;
     border-radius: 25%;
-    padding: 20px 25px 20px 25px;
-    
+    padding: 20px 25px 20px 25px; 
 }
 
 /*SERVICES SECTION*/
@@ -261,6 +260,45 @@ body{
     font-family: 'Press Start 2P', cursive;
 }
 
+/*PROJECTS SECTION*/
+
+.projects{
+    max-width: 100%;
+    padding: 30px 25px 30px 25px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #31B404;
+}
+
+.projects span{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+    line-height: 60px;
+    text-shadow: 0 0 20px #31B404; 
+}
+
+.container-project{
+    margin: 35px 0;
+}
+
+.container-project div{
+    margin: 35px 0;
+}
+
+.project-img img{
+    max-width: 100%;
+    border-radius: 25%;
+    padding: 20px 25px 20px 25px;
+}
+
+.container-project p{
+    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+}
+
 
 
 
@@ -325,5 +363,23 @@ body{
     .service-container:hover div{
         color: #3ADF00;
     }
+
+    /*SKILLS SECTION*/
+
+    .container-skill{
+        display: flex;
+    }
+
+    /*PROJECTS SECTION*/
+
+    .container-project{
+        display: flex;
+        padding: 35px 0;
+    }
+
+    .container-project{
+        margin: 0;
+    }
+    
 
 }
