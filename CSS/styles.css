@@ -295,10 +295,35 @@ body{
 }
 
 .container-project p{
-    font-size: 1.5em;
+    font-size: 1.4  em;
     font-family: 'Press Start 2P', cursive;
+    line-height: 60px;
 }
 
+
+/*CONTACT SECTION*/
+
+.contact{
+    max-width: 100%;
+    padding: 30px 25px 30px 25px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #31B404;
+}
+
+.container-contact p{
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 3px;
+    line-height: 60px;
+}
+
+.container-contact div{
+    color: #31B404;
+    width: 100%;
+    font-size: 6em;
+    padding: 35px 0px;
+}
 
 
 
