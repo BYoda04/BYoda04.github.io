@@ -233,6 +233,36 @@ body{
     color: #31B404;
 }
 
+.skills span{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    letter-spacing: 5px;
+    line-height: 60px;
+    text-shadow: 0 0 20px #31B404; 
+}
+
+.container-skill{
+    padding: 40px 25px;
+}
+
+.skill-container{
+    width: 100%;
+    padding: 25px 0;
+}
+
+.skill-container div{
+    font-size: 15em;
+}
+
+.skill-container p{
+    font-size: 1.5em !important;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
 
 @media (min-width: 767px){
 

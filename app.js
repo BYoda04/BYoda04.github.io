@@ -6,7 +6,7 @@ let typeOne = document.getElementById('one')
 let typeTwo = document.getElementById('two')
 let typeTrhee = document.getElementById('trhee')
 let typeFour = document.getElementById('four')
-let services = document.getElementById('services')
+let servicesSpan = document.getElementById('services-span')
 
 toggle.onclick = function() {
     menu.classList.toggle('active')
