@@ -22,7 +22,7 @@ body{
     height: 100vh;
 }
 
-/*MENU SECTIOn*/
+/*MENU SECTION*/
 
 .menu{
     position: fixed;
@@ -169,7 +169,7 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 5px;
     line-height: 60px;
     text-shadow: 0 0 20px #31B404; 
@@ -194,6 +194,7 @@ body{
 }
 
 .service-container p{
+    color: #BCBDBC;
     padding: 10px 20px;
 }
 
@@ -211,53 +212,146 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 5px;
-    line-height: 60px;
-    text-shadow: 0 0 20px #31B404; 
+    line-height: 60px; 
+    text-shadow: 0 0 20px #31B404;
 }
 
 .about p{
+    color: #BCBDBC;
     font-size: 1.25em;
     padding: 25px 0;
 }
 
+.about h2{
+    margin: 35px 0;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.links-container{
+    padding: 35px 0 ;
+}
+
+.links-container a img{
+    max-width: 100%;
+}
+
+.links-container p{
+    text-transform: uppercase;
+    color: #31B404;
+    font-size: 2em;
+}
+
 /*SKILLS SECTION*/
 
-.skills{
-    max-width: 100%;
-    padding: 30px 25px 30px 25px;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    color: #31B404;
-}
-
-.skills span{
-    text-transform: uppercase;
-    text-align: center;
+.skills h3{
     font-family: 'Press Start 2P', cursive;
     font-size: 2em;
-    letter-spacing: 5px;
-    line-height: 60px;
-    text-shadow: 0 0 20px #31B404; 
+    color: #31B404;
+    text-shadow: 0 0 20px #31B404;
+    text-align: center;
 }
 
-.container-skill{
-    padding: 40px 25px;
+.skills-container{
+    margin-top: 35px;
+    max-width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.skill-container{
+.skills-container .card{
+    position: relative;
+    width: 250px;
+    margin: 25px 0;
+    background: rgba(14, 18, 22, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.skills-container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 25px 0;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
-.skill-container div{
-    font-size: 15em;
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.skill-container p{
-    font-size: 1.5em !important;
-    font-family: 'Press Start 2P', cursive;
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 5em;
+}
+
+.text{
+    position: relative;
+    color: #BCBDBC;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #21610B;
+}
+
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #21610B;
+}
+
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: #21610B;
 }
 
 /*PROJECTS SECTION*/
@@ -290,14 +384,19 @@ body{
 
 .project-img img{
     max-width: 100%;
-    border-radius: 25%;
+    /* border-radius: 25%; */
     padding: 20px 25px 20px 25px;
 }
 
-.container-project p{
-    font-size: 1.4  em;
+.container-project h2{
+    font-size: 1.4em;
     font-family: 'Press Start 2P', cursive;
     line-height: 60px;
+}
+
+.container-project p{
+    font-size: 1.25em;
+    color: #BCBDBC;
 }
 
 
@@ -356,8 +455,8 @@ body{
     
     .home-section-h{
         order: 2;
-        font-size: 1.5em;
-        line-height: 60px;
+        font-size: 2.4em;
+        line-height: 100px;
         flex-basis: 48%;
     }
 
@@ -380,7 +479,7 @@ body{
         margin: 0 25px;
     }
 
-    .service-container:hover{
+    .service-container:hover h2{
         color: #31B404;
         text-shadow: 0 0 20px #31B404;  
     }
@@ -389,21 +488,50 @@ body{
         color: #3ADF00;
     }
 
+    /*ABOUT SECTION*/
+
+    .container-links    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
     /*SKILLS SECTION*/
 
-    .container-skill{
-        display: flex;
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .skills-container .card{
+        width: 350px;
+        align-self: center;
+        justify-self: center;
     }
 
     /*PROJECTS SECTION*/
 
     .container-project{
-        display: flex;
+        margin: 0;
         padding: 35px 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .container-project{
-        margin: 0;
+    .container-project p{
+        font-size: 1.5em;
+    }
+
+    .container-project div{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .project-img{
+        width: 100%;
+        align-self: center;
     }
     
 
