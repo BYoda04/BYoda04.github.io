@@ -378,8 +378,11 @@ svg circle:nth-child(2){
     margin: 35px 0;
 }
 
-.container-project div{
-    margin: 35px 0;
+.card-project{
+    margin: 35px 5px;
+    padding: 15px;
+    background: rgba(14, 18, 22, 0.7);
+    border-radius: 5rem;
 }
 
 .project-img img{
@@ -521,7 +524,8 @@ svg circle:nth-child(2){
         font-size: 1.5em;
     }
 
-    .container-project div{
+    .card-project{
+        margin: 35px 20px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
